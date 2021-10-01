@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5EBA734-D65E-490E-8FC8-13445C095EEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WF_CW2_TEST</RootNamespace>
+    <AssemblyName>WF CW2 TEST</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aboutus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aboutus.Designer.cs">
+      <DependentUpon>Aboutus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendence1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attendence1.Designer.cs">
+      <DependentUpon>Attendence1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calander1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calander1.Designer.cs">
+      <DependentUpon>Calander1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contactus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contactus.Designer.cs">
+      <DependentUpon>Contactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Courses1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Courses1.Designer.cs">
+      <DependentUpon>Courses1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Courses2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Courses2.Designer.cs">
+      <DependentUpon>Courses2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash1.Designer.cs">
+      <DependentUpon>Dash1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="library1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="library1.Designer.cs">
+      <DependentUpon>library1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="News1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="News1.Designer.cs">
+      <DependentUpon>News1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pastpapers1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pastpapers1.Designer.cs">
+      <DependentUpon>Pastpapers1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resetpass1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resetpass1.Designer.cs">
+      <DependentUpon>Resetpass1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resetpass2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resetpass2.Designer.cs">
+      <DependentUpon>Resetpass2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signin1.Designer.cs">
+      <DependentUpon>Signin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup1.Designer.cs">
+      <DependentUpon>Signup1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup2.Designer.cs">
+      <DependentUpon>Signup2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup3.Designer.cs">
+      <DependentUpon>Signup3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup4.Designer.cs">
+      <DependentUpon>Signup4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup5.Designer.cs">
+      <DependentUpon>Signup5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup6.Designer.cs">
+      <DependentUpon>Signup6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup7.Designer.cs">
+      <DependentUpon>Signup7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup8.Designer.cs">
+      <DependentUpon>Signup8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup9.Designer.cs">
+      <DependentUpon>Signup9.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Aboutus.resx">
+      <DependentUpon>Aboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence1.resx">
+      <DependentUpon>Attendence1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calander1.resx">
+      <DependentUpon>Calander1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contactus.resx">
+      <DependentUpon>Contactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Courses1.resx">
+      <DependentUpon>Courses1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Courses2.resx">
+      <DependentUpon>Courses2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash1.resx">
+      <DependentUpon>Dash1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="library1.resx">
+      <DependentUpon>library1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="News1.resx">
+      <DependentUpon>News1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pastpapers1.resx">
+      <DependentUpon>Pastpapers1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resetpass1.resx">
+      <DependentUpon>Resetpass1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resetpass2.resx">
+      <DependentUpon>Resetpass2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signin1.resx">
+      <DependentUpon>Signin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup1.resx">
+      <DependentUpon>Signup1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup2.resx">
+      <DependentUpon>Signup2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup3.resx">
+      <DependentUpon>Signup3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup4.resx">
+      <DependentUpon>Signup4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup5.resx">
+      <DependentUpon>Signup5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup6.resx">
+      <DependentUpon>Signup6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup7.resx">
+      <DependentUpon>Signup7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup8.resx">
+      <DependentUpon>Signup8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup9.resx">
+      <DependentUpon>Signup9.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
